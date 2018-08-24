@@ -1,0 +1,344 @@
+html {
+	padding: 0;
+	margin: 0;
+	width: 0;
+	height: 0;
+}
+
+div,img {
+	transition:transform ease-in-out 0.5s;
+	border: none;
+	cursor: pointer;
+}
+
+
+.background {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-image: url("../img/background4.jpg");
+}
+
+.background.trans {
+	background-image: url("../img/textbackground4.jpg");
+	background-color: black;
+}
+
+.pic {
+	position: absolute;
+}
+
+.pic0 {
+	opacity: 1;
+	width: 19.5%;
+	height: 9.3%;
+	top: 71%;
+	left: 52%;
+    background-image: url("../img/zhuhai/0.png");
+	background-size: 100% 100%;
+	background-position: 0% 0%;
+}
+
+.pic0.trans {
+	transform: translate3d(-53%,-335%,0);
+	width: 40%;
+	height: 19%;
+	box-shadow: none;
+}
+
+.pic0.clear {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.pic1 {
+	width: 13.7%;
+	height: 9%;
+	top: 47.5%;
+	left: 63.8%;
+    background-image: url("../img/zhuhai/1.png");
+	background-size: 100% 100%;
+	background-position: 50% 0%;
+}
+
+.pic1.trans {
+	transform: translate3d(-85%,-185%,0);
+	width: 36%;
+	height: 23%;
+	box-shadow: none;
+}
+
+.pic1.clear {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.pic2 {
+	width: 13%;
+	height: 6.5%;
+	top: 53%;
+	left: 36.6%;
+	background-image: url("../img/zhuhai/2.png");
+	background-size: 100% 100%;
+	box-shadow: 20px 15px 10px rgba(34, 25, 25, 0.2);
+}
+
+.pic2.trans {
+	transform: translate3d(-25%,-225%,0);
+	width: 55%;
+	height: 20%;
+	box-shadow: none;
+}
+
+.pic2.clear {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.pic3 {
+	width: 19%;
+	height: 6%;
+	top: 59%;
+	left: 72.5%;
+	background-image: url("../img/zhuhai/3.png");
+	background-size: 100% 100%;
+	box-shadow: 20px 15px 10px rgba(34, 25, 25, 0.2);
+}
+
+.pic3.trans {
+	transform: translate3d(-90%,-315%,0);
+	width: 55%;
+	height: 15%;
+	box-shadow: none;
+}
+
+.pic3.clear {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.pic4 {
+	width: 15.2%;
+	height: 7.8%;
+	top: 42%;
+	left: 38.5%;
+	background-image: url("../img/zhuhai/4.png");
+	background-size: 100% 100%;
+	box-shadow: 20px 15px 10px rgba(34, 25, 25, 0.2);
+}
+
+.pic4.trans {
+	transform: translate3d(-23%,-175%,0);
+	width: 40%;
+	height: 19%;
+	box-shadow: none;
+}
+
+.pic4.clear {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.pic5 {
+	width: 18%;
+	height: 9%;
+	top: 44%;
+	left: 18%;
+	background-image: url("../img/zhuhai/5.png");
+	background-size: 100% 100%;
+	box-shadow: 20px 15px 10px rgba(34, 25, 25, 0.2);
+}
+
+.pic5.trans {
+	transform: translate3d(20%,-190%,0);
+	width: 46%;
+	height: 19%;
+	box-shadow: none;
+}
+
+.pic5.clear {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+
+.pic6 {
+	width: 17%;
+	height: 8.6%;
+	top: 59.3%;
+	left: 51.2%;
+    background-image: url("../img/zhuhai/6.png");
+	background-size: 100% 100%;
+	background-position: 50% 0%;
+}
+
+.pic6.trans {
+	transform: translate3d(-50%,-275%,0);
+	width: 36%;
+	height: 18%;
+	box-shadow: none;
+}
+
+.pic6.clear {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.pic7 {
+	width: 16%;
+	height: 7.5%;
+	top: 36.9%;
+	left: 57%;
+    background-image: url("../img/zhuhai/7.png");
+	background-size: 100% 100%;
+	background-position: 50% 0%;
+}
+
+.pic7.trans {
+	transform: translate3d(-70%,-155%,0);
+	width: 36%;
+	height: 17%;
+	box-shadow: none;
+}
+
+.pic7.clear {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.pic8 {
+	width: 17.4%;
+	height: 7%;
+	top: 33%;
+	left: 17.2%;
+    background-image: url("../img/zhuhai/8.png");
+	background-size: 100% 100%;
+	background-position: 50% 0%;
+}
+
+.pic8.trans {
+	transform: translate3d(40%,-130%,0);
+	width: 36%;
+	height: 20%;
+	box-shadow: none;
+}
+
+.pic8.clear {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.text {
+	transition: ease-in-out 1.5s;
+	opacity: 0;
+	position: absolute;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	color: #3B5A3B;
+	width: 62%;
+	height: 0%;
+}
+
+.text.trans {
+	opacity: 1;
+	height: 50%;
+	top: 39%;
+	left: 19%;
+}
+
+.ToSouth {
+	position: absolute;
+	background-image: url("../img/back1.png");
+	background-size: 100% 100%;
+	height: 10%;
+	width: 15%;
+	top: 88%;
+	left: 3%;
+}
+
+.ToSouth.clear {
+	height: 0%;
+	width: 0%;
+}
+
+.back {
+	position: absolute;
+	opacity: 0;
+	background-image: url("../img/back.png");
+	background-size: 100% 100%;
+}
+
+.back.show {
+	opacity: 1;
+	height: 10%;
+	width: 15%;
+	top: 88%;
+	left: 83%;
+}
+
+.spinner {
+	position: absolute;
+	top: 37%;
+	left: 20%;
+    width: 50%;
+    height: 20%;
+    text-align: center;
+}
+ 
+.spinner > div {
+  background-color: #67CF22;
+  height: 100%;
+  width: 5%;
+  display: inline-block;
+   
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+ 
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+ 
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+ 
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) } 
+  20% { -webkit-transform: scaleY(1.0) }
+}
+ 
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
