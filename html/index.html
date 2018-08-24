@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SYSU</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="cache-control" content="no-cache, must-revalidate" />
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <script language="javascript" type="text/javascript">
+        	function showAllContent(status1,status2) {
+				document.getElementById("showContent").style.display=status1;
+ 				document.getElementsByClassName("spinner")[0].style.display=status2;
+			}
+		</script>
+	</head>
+	<body onLoad=showAllContent("","none")>
+		<div class="spinner">
+  			<div class="rect1"></div>
+  			<div class="rect2"></div>
+ 			<div class="rect3"></div>
+			<div class="rect4"></div>
+  			<div class="rect5"></div>
+		</div>
+		<div id="showContent" style="z-index:1; ">
+   			<div class="background">
+   			    <a href="south.html"><img class="south" src="../img/pixel.gif"></a>
+   			    <a href="north.html"><img class="north" src="../img/pixel.gif"></a>
+   			    <a href="east.html"><img class="east" src="../img/pixel.gif"></a>
+   			</div>
+   		</div>
+   		<script>showAllContent("none","");</script>
+	</body>
+</html>
