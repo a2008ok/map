@@ -1,0 +1,107 @@
+.background {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/index.jpg");
+	background-size: 100% 100%;
+}
+
+.south {
+	position: absolute;
+	background-image: url("../img/index_south.png");
+	width: 39%;
+	height: 13%;
+	top: 35.5%;
+	left: 8.5%;
+	background-size: 102% 225%;
+	background-position: 120% 43%;
+}
+
+.north {
+	position: absolute;
+	background-image: url("../img/index_north.png");
+	width: 32%;
+	height: 14%;
+	top:34.5%;
+	left: 57.5%;
+	background-size: 145% 200%;
+	background-position: 54% 45%;
+}
+
+.east {
+	position: absolute;
+	background-image: url("../img/index_east.png");
+	width: 34%;
+	height: 12%;
+	top:57%;
+	left: 10%;
+	background-size: 100% 100%;
+	background-position: 54% 45%;
+}
+
+.zhuhai {
+	position: absolute;
+	background-image: url("../img/index_zhuhai.png");
+	width: 34%;
+	height: 12%;
+	top: 57%;
+	left: 56%;
+	background-size: 100% 100%;
+	background-position: 54% 45%;
+}
+
+.spinner {
+	position: absolute;
+	top: 37%;
+	left: 20%;
+    width: 50%;
+    height: 20%;
+    text-align: center;
+}
+ 
+.spinner > div {
+  background-color: #67CF22;
+  height: 100%;
+  width: 5%;
+  display: inline-block;
+   
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+ 
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+ 
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+ 
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) } 
+  20% { -webkit-transform: scaleY(1.0) }
+}
+ 
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
