@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SYSU</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="cache-control" content="no-cache, must-revalidate" />
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script language="javascript" type="text/javascript">
+        	function showAllContent(status1,status2) {
+				document.getElementById("showContent").style.display=status1;
+ 				document.getElementsByClassName("spinner")[0].style.display=status2;
+			}
+			function playPause() {    
+                var music = document.getElementById('music2');    
+                var music_btn = document.getElementById('music_btn2');    
+                if (music.paused){    
+                    music.play();    
+                    music_btn.src = 'img/play.png';    
+                }    
+                else{    
+                    music.pause();    
+                    music_btn.src = 'img/pause.png';     
+                }    
+            }   
+		</script>
+	</head>
+	<body onLoad=showAllContent("","none")>
+	    <audio id="music2" src="music.mp3" autoplay="autoplay" loop="loop">你的浏览器不支持audio标签。</audio>
+		<div class="spinner">
+  			<div class="rect1"></div>
+  			<div class="rect2"></div>
+ 			<div class="rect3"></div>
+			<div class="rect4"></div>
+  			<div class="rect5"></div>
+		</div>
+		<div id="showContent" style="z-index:1; ">
+   			<div class="background">
+   			    <a href="south.html"><img class="south" src="img/pixel.gif"></a>
+   			    <a href="north.html"><img class="north" src="img/pixel.gif"></a>
+   			    <a href="east.html"><img class="east" src="img/pixel.gif"></a>
+   			    <a href="zhuhai.html"><img class="zhuhai" src="img/pixel.gif"></a>    
+                <a href="javascript:playPause();"><img src="img/play.png" width="48" height="50" id="music_btn2" border="0"></a>  
+   			</div>
+   		</div>
+   		<script>showAllContent("none","");</script>
+	</body>
+</html>
